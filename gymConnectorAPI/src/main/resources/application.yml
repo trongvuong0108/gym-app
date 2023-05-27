@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gymSystem
+    username: root
+    password:
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+
+  mail:
+    port: 587
+    host: smtp.gmail.com
+    username: ngaitrong0108@gmail.com
+    password: cmsmgxssydukldcv
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+

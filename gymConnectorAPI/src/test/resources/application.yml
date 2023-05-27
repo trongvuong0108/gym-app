@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mdb
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    port: 587
+    host: smtp.gmail.com
+    username: ngaitrong0108@gmail.com
+    password: cmsmgxssydukldcv
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
